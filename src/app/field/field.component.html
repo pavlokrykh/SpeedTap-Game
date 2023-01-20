@@ -1,0 +1,9 @@
+<div class="container">
+
+    <div class="cell" *ngFor="let b of buttons; let i=index">
+
+        <button [ngClass]="states[i]" (mousedown)="hit(i,$event)" (touchstart)="hit(i,$event)"></button>
+
+    </div>
+
+</div>

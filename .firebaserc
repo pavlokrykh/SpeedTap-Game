@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "speedtap-pk": {
+      "hosting": {
+        "FinalSpeedTap": [
+          "speedtap-pk"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "speedtap-pk"
+  }
+}

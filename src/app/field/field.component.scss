@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+
+}
+
+.cell {
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.black {
+    color: white;
+    background-color: black;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+.green {
+    background-color: green;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}.white {
+    background-color: white;
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+.red {
+    background-color: red;
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+}

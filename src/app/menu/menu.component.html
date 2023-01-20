@@ -1,0 +1,22 @@
+
+<div class="container">
+
+    <div [ngClass]="menuState">
+
+        <h1>SpeedTap Game</h1>
+
+        <div class="header">Choose timer:</div>
+
+        <app-radio class="radio" [v]="1" [name]="'timer'" [value]="['20s','30s']" [model]="timer" [state]="state"></app-radio>
+
+        <div class="header">Choose game mode:</div>
+
+        <app-radio class="radio" [v]="2" [name]="'game'" [value]="['frenzy', 'memorizer']" (changeOption)="disable($event)" [model]="game"></app-radio>
+        
+
+        <app-button class="startBtn" title="Start" (click)="start()"></app-button>
+
+    </div>
+    
+</div>
+

@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="game">
+
+        <app-text [score]="score" [game]="game" [timer]="timer"></app-text>
+
+        <div class="countdown" [style.visibility]="cVisible">{{ countdown }}</div>
+
+        <app-field (scoreUpdate)="receiveScore()" (gameEnd)="endGame($event)" [game]="game"></app-field>
+
+        <app-button class="menuBtn" title="Menu" (click)="open()"></app-button>
+
+    </div>
+
+
+</div>

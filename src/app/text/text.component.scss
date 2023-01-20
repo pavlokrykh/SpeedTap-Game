@@ -1,0 +1,31 @@
+
+span {
+    font-size: min(4vw,20px);
+    width: 100%;
+}
+
+.text {
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
+}
+
+.time {
+    text-align: left;
+}
+
+.score {
+    text-align: right;
+}
+
+.timer {
+    text-align: left;
+    font-size: min(4.8vw,24px);
+}
+
+.points {
+    text-align: right;
+    font-size: min(4.8vw,24px);
+    transition: 0.1s;
+}

@@ -1,0 +1,16 @@
+<div class="wrapper" *ngIf="value">
+
+    <label class="options{{v}}" *ngIf="value[0]">
+    
+        <input type="radio" name="{{name}}" value="{{value[0]}}" (ngModelChange)="update($event)" [(ngModel)]="model" [disabled]="state">
+        <div class="option{{v}}">{{value[0].charAt(0).toUpperCase()+value[0].slice(1)}}</div>
+    
+    </label>
+    <label class="options{{v}}" *ngIf="value[1]">    
+    
+        <input type="radio" name="{{name}}" value="{{value[1]}}" (ngModelChange)="update($event)" [(ngModel)]="model" [disabled]="state">
+        <div class="option{{v}}" [style.]>{{value[1].charAt(0).toUpperCase()+value[1].slice(1)}}</div>
+    
+    </label>
+
+</div>
